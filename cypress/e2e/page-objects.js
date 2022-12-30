@@ -7,25 +7,25 @@ export function openPage() {
 
 function expenseListPage() {
     return {
-        addNewExpense: () => {
+        clickAddNewExpenseButton: () => {
             cy.get('[data-cy="add-expense-btn"]').click();
 
             return expenseDetailsFormPage();
         },
 
-        removeExpense: () => {
+        clickRemoveExpenseButton: () => {
             cy.get('[data-cy="remove-expense-btn"]').click();
 
             return expenseListPage();
         },
 
-        copyExpense: () => {
+        clickCopyExpenseButton: () => {
             cy.get('[data-cy="copy-expense-btn"]').click();
 
             return expenseListPage();
         },
 
-        editExpense: () => {
+        clickEditExpenseButton: () => {
             cy.get('[data-cy="edit-expense-btn"]').click();
 
             return expenseDetailsFormPage();
@@ -71,7 +71,7 @@ function expenseDetailsFormPage() {
             return expenseDetailsFormPage();
         },
 
-        save: () => {
+        clickSaveButton: () => {
             cy.get('[data-cy="save-expense-btn"]').click();
             cy.get('[data-cy="expense-details-form"]').should('not.exist');
 

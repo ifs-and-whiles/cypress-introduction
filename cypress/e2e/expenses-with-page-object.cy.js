@@ -7,9 +7,9 @@ describe('expense list tests', () => {
 
     //when
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('chleb', 10, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     //then
     expenseList
@@ -22,15 +22,15 @@ describe('expense list tests', () => {
     var expenseList = openPage();
 
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('chleb', 10, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     //when
     expenseList
-      .editExpense()
+      .clickEditExpenseButton()
       .fillForm("nowy chleb", 15, '2020-01-02')
-      .save();
+      .clickSaveButton();
 
     //then
     expenseList
@@ -43,13 +43,13 @@ describe('expense list tests', () => {
     var expenseList = openPage();
 
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('chleb', 10, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     //when
     expenseList
-      .removeExpense();
+      .clickRemoveExpenseButton();
 
     //then
     expenseList
@@ -61,13 +61,13 @@ describe('expense list tests', () => {
     var expenseList = openPage();
 
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('chleb', 10, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     //when
     expenseList
-      .copyExpense();
+      .clickCopyExpenseButton();
 
     //then
     expenseList
@@ -82,19 +82,19 @@ describe('expense list tests', () => {
     
     //when
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('chleb', 10, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('masło', 8.99, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     expenseList
-      .addNewExpense()
+      .clickAddNewExpenseButton()
       .fillForm('coś innego', 100, '2020-01-01')
-      .save();
+      .clickSaveButton();
 
     //then
     expenseList
