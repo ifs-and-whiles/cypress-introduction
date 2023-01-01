@@ -13,7 +13,7 @@ describe('expense details form tests', () => {
       .clickCancelButton();
 
     //then
-    expenseList
+    expenseForm
       .assertExpenseDetailsFormIsNotVisible();
   });
 

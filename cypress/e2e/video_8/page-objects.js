@@ -58,12 +58,6 @@ function expenseListPage() {
 
             return expenseListPage();
         },
-
-        assertExpenseDetailsFormIsNotVisible: () => {
-            cy.get('[data-cy="expense-details-form"]').should('not.exist');
-
-            return expenseListPage();
-        }
     }
 }
 
@@ -96,6 +90,13 @@ function expenseDetailsFormPage() {
 
         clickCancelButton: () => {
             cy.get('.btn-outline-secondary > .bi-x-lg').click();
+            cy.get('[data-cy="expense-details-form"]').should('not.exist');
+
+            return expenseListPage();
+        },
+
+
+        assertExpenseDetailsFormIsNotVisible: () => {
             cy.get('[data-cy="expense-details-form"]').should('not.exist');
 
             return expenseListPage();
