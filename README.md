@@ -1,7 +1,8 @@
 # cypress-introduction:
 Kod źródłowy przygotowany pod mini-kurs Cypress'a
 
-Platforma testerska, pod którą piszemy testy automatyczne:\ https://naucz-sie-testowac.czyitjestdlamnie.pl/
+Platforma testerska, pod którą piszemy testy automatyczne:\
+https://naucz-sie-testowac.czyitjestdlamnie.pl/
 
 
 ## Zależności: 
